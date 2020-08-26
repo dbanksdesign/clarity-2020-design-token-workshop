@@ -1,0 +1,99 @@
+@import "$styles/_variables.scss";
+
+.prism-code {
+  padding: $size-padding-base;
+  margin-bottom: $size-padding-xl;
+  background-color: $color-background-secondary;
+  overflow-x: auto;
+  display: block;
+}
+
+.token {
+  &.comment,
+  &.block-comment,
+  &.prolog,
+  &.doctype,
+  &.cdata {
+    color: var(--color-font-tertiary);
+  }
+  
+  &.attr-name,
+  &.namespace {
+    color: var(--color-font-code-1);
+  }
+
+  &.tag {
+    color: var(--color-font-code-5);
+  }
+
+  &.function-name {
+    color: var(--color-font-code-2);
+  }
+
+  &.boolean,
+  &.number,
+  &.function {
+    color: var(--color-font-code-3);
+  }
+
+  &.property,
+  &.class-name,
+  &.constant,
+  &.symbol {
+    color: var(--color-font-code-4);
+  }
+
+  &.selector,
+  &.important,
+  &.atrule,
+  &.keyword,
+  &.builtin {
+    color: var(--color-font-code-2);
+  }
+
+  &.string,
+  &.char,
+  &.attr-value,
+  &.regex,
+  &.variable {
+    color: var(--color-font-code-1);
+  }
+
+  &.operator,
+  &.entity,
+  &.url {
+    color: var(--color-font-code-5);
+  }
+
+  &.important,
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.entity {
+    cursor: help;
+  }
+
+  &.inserted {
+    background-color: var(--color-background-success);
+  }
+
+  &.deleted {
+    background-color: var(--color-background-error);
+  }
+
+  &.punctuation {
+    color: var(--color-font-secondary);
+  }
+}
+
+
+
+.language-json .token.plain {
+  color: var(--color-font-tertiary);
+}
+
