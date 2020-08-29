@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26C0355824F9FCE000890025 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C0355724F9FCE000890025 /* BadgeView.swift */; };
 		26C4145D24F43647009EC44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4145C24F43647009EC44D /* AppDelegate.swift */; };
 		26C4145F24F43647009EC44D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4145E24F43647009EC44D /* SceneDelegate.swift */; };
 		26C4146324F43649009EC44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C4146224F43649009EC44D /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26C0355724F9FCE000890025 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		26C4145924F43647009EC44D /* ClarityDesignTokensDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClarityDesignTokensDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C4145C24F43647009EC44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C4145E24F43647009EC44D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				26C4146424F43649009EC44D /* Preview Content */,
 				26C4148924F45180009EC44D /* FontSizeTokensView.swift */,
 				26C4148B24F452B1009EC44D /* TypographyTokensView.swift */,
+				26C0355724F9FCE000890025 /* BadgeView.swift */,
 			);
 			path = ClarityDesignTokensDemo;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				26C4145D24F43647009EC44D /* AppDelegate.swift in Sources */,
 				26C4148A24F45180009EC44D /* FontSizeTokensView.swift in Sources */,
 				26C4147824F4368C009EC44D /* HomeView.swift in Sources */,
+				26C0355824F9FCE000890025 /* BadgeView.swift in Sources */,
 				26C4148124F43B9F009EC44D /* ContentView.swift in Sources */,
 				26C4145F24F43647009EC44D /* SceneDelegate.swift in Sources */,
 				26C4147A24F4368C009EC44D /* ColorTokensView.swift in Sources */,

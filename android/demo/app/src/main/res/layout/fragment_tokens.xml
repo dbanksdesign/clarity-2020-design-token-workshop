@@ -15,7 +15,7 @@
         android:layout_marginLeft="@dimen/size_padding_small"
         android:layout_marginRight="@dimen/size_padding_small"
         card_view:cardCornerRadius="0dp"
-        card_view:cardBackgroundColor="@color/color_background_base"
+        card_view:cardBackgroundColor="@color/color_background_primary"
         card_view:cardElevation="10dp">
 
         <TextView
@@ -35,7 +35,7 @@
         android:layout_marginLeft="@dimen/size_padding_small"
         android:layout_marginRight="@dimen/size_padding_small"
         card_view:cardCornerRadius="0dp"
-        card_view:cardBackgroundColor="@color/color_background_base"
+        card_view:cardBackgroundColor="@color/color_background_primary"
         card_view:cardElevation="10dp">
 
         <TextView
@@ -55,7 +55,7 @@
         android:layout_marginLeft="@dimen/size_padding_small"
         android:layout_marginRight="@dimen/size_padding_small"
         card_view:cardCornerRadius="0dp"
-        card_view:cardBackgroundColor="@color/color_background_base"
+        card_view:cardBackgroundColor="@color/color_background_primary"
         card_view:cardElevation="10dp">
 
         <TextView

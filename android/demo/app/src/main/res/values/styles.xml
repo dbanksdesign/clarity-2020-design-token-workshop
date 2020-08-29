@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorOnPrimary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/color_font_inverse</item>
         <item name="colorOnSurface">@color/color_font_primary</item>
         <item name="colorSurface">@color/color_background_primary</item>
     </style>

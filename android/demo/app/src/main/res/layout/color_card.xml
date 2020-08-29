@@ -16,7 +16,7 @@
     android:layout_marginRight="@dimen/size_padding_small"
     android:padding="@dimen/size_padding_small"
     app:cardCornerRadius="0dp"
-    app:cardBackgroundColor="@color/color_background_base"
+    app:cardBackgroundColor="@color/color_background_primary"
     app:cardElevation="10dp">
 
     <LinearLayout

@@ -13,6 +13,7 @@
     <color name="color_font_primary">#E6000626</color>
     <color name="color_font_secondary">#CC000626</color>
     <color name="color_font_tertiary">#99000626</color>
+    <color name="color_font_inverse">#FFFFFFFF</color>
 
     <color name="color_border_primary">#66000626</color>
     <color name="color_border_secondary">#33000626</color>

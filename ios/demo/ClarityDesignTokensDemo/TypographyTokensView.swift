@@ -42,7 +42,7 @@ struct TypographyTokensView: View {
 
                 Text("p2")
                     .clarityTypography(.p2)
-            }.padding(medium)
+            }.padding(20)
         }.navigationBarTitle("Typography tokens")
     }
 }
