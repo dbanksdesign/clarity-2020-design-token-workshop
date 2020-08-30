@@ -1,0 +1,3 @@
+include ':claritydesigntokens'
+include ':demo'
+rootProject.name = "ClarityDesignTokens"

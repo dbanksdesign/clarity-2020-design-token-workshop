@@ -34,8 +34,29 @@ module.exports = {
     asset: {
       transformGroup: `assets`,
       buildPath: `web/dist/`,
-      androidPath: `android/dist/src/main/res/drawable/`,
+      androidPath: `android/claritydesigntokens/src/main/res/drawable/`,
       actions: [`generateSVG`]
-    }
+    },
+    
+    android: {
+      transformGroup: "android",
+      buildPath: "android/claritydesigntokens/src/main/res/values/",
+      files: [{
+        destination: "style_dictionary_colors.xml",
+        format: "android/colors"
+      },{
+        destination: "style_dictionary_font_dimens.xml",
+        format: "android/fontDimens"
+      },{
+        destination: "style_dictionary_dimens.xml",
+        format: "android/dimens"
+      },{
+        destination: "style_dictionary_integers.xml",
+        format: "android/integers"
+     },{
+        destination: "style_dictionary_strings.xml",
+        format: "android/strings"
+      }]
+    },
   }
 }
