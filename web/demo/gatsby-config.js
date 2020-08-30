@@ -10,6 +10,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     // {
+    //   resolve: `gatsby-plugin-react-svg`,
+    //   options: {
+    //     rule: {
+    //       include: /dist/
+    //     }
+    //   }
+    // },
+    // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
     //     name: `images`,

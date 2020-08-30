@@ -1,0 +1,32 @@
+{
+  "name": "clarity-design-tokens",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "web/dist/index.js",
+  "files": [
+    "web/dist"
+  ],
+  "scripts": {
+    "build": "style-dictionary build --config ./sd.config.js",
+    "watch": "npm run build && chokidar \"tokens/**/*.json\" -c \"npm run build\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbanksdesign/clarity-2020-design-token-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbanksdesign/clarity-2020-design-token-workshop/issues"
+  },
+  "homepage": "https://github.com/dbanksdesign/clarity-2020-design-token-workshop#readme",
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20",
+    "style-dictionary": "^2.10.1",
+    "svg2vectordrawable": "^2.6.25"
+  }
+}

@@ -19,6 +19,7 @@
     "gatsby-plugin-manifest": "^2.4.23",
     "gatsby-plugin-mdx": "^1.2.34",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-source-filesystem": "^2.3.24",
     "mdx-utils": "^0.2.0",
@@ -26,6 +27,7 @@
     "prism-react-renderer": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.1.1"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "asset": {
+    "svg": {
+      "logo": {
+        "value": "assets/svg/logo.svg",
+        "attributes": {
+          "width": 128,
+          "height": 128
+        }
+      }
+    }
+  }
+}

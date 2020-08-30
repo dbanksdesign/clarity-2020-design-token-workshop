@@ -1,3 +1,5 @@
+@import "clarity-design-tokens/web/dist/variables.scss";
+
 :root {
   --color-core-white: #FFFFFF;
 
@@ -147,17 +149,17 @@ body {
 }
 
 a {
-  color: $color-font-link;
+  color: $color-font-interactive;
   transition: all $time-duration-base ease;
 }
 
 a:hover {
-  color: $color-font-hover;
+  color: $color-font-interactive-hover;
 }
 
 a:active,
 a:focus {
-  color: $color-font-active;
+  color: $color-font-interactive-active;
 }
 
 p {

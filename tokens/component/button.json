@@ -1,0 +1,21 @@
+{
+  "component": {
+    "button": {
+      "font-size": { "value": "{size.font.small.value}" },
+      "padding": {},
+      "color": {},
+      
+      "primary": {
+        "background-color": {},
+        "color": {}
+      },
+      
+      "outline": {
+        "background-color": {},
+        "color": {},
+        "border-width": {},
+        "border-color": {}
+      }
+    }
+  }
+}

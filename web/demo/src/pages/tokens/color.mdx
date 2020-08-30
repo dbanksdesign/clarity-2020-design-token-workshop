@@ -2,13 +2,24 @@
 title: Color
 ---
 
-import { FontColor, BorderColor, BackgroundColor } from '$components/Color'
+import { FontColor, BorderColor, BackgroundColor, CoreColors } from '$components/Color'
+import ClarityDesignTokens from 'clarity-design-tokens/web/dist/tokens.json'
 
 # Color
 
 ## Core
 
+<CoreColors {...ClarityDesignTokens.color.core.neutral} />
+<CoreColors {...ClarityDesignTokens.color.core.green} />
+
+<CoreColors {...ClarityDesignTokens.color.core.red} />
+
+<CoreColors {...ClarityDesignTokens.color.core.blue} />
+
 ## Background
+
+<BackgroundColor name={ClarityDesignTokens.color.background.primary.name}
+  value={ClarityDesignTokens.color.background.primary.value} />
 
 <BackgroundColor name="$color-background-primary" value="#FFFFFF" />
 <BackgroundColor name="$color-background-secondary" value="#F8F7F8" />
