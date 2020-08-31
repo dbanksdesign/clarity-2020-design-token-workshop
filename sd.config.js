@@ -35,7 +35,7 @@ module.exports = {
       transformGroup: `assets`,
       buildPath: `web/dist/`,
       androidPath: `android/claritydesigntokens/src/main/res/drawable/`,
-      iosPath: `ios/dist/Assets.xcassets/`,
+      iosPath: `ios/dist/DesignTokens.xcassets/`,
       actions: [`generateSVG`]
     },
     
@@ -59,5 +59,15 @@ module.exports = {
         format: "android/strings"
       }]
     },
+    
+    ios: {
+      transformGroup: `ios-swift`,
+      buildPath: `ios/dist/`,
+      files: [{
+        destination: `ClarityDesignTokens.swift`,
+        className: `ClarityDesignTokens`,
+        format: `ios-swift/class.swift`
+      }]
+    }
   }
 }

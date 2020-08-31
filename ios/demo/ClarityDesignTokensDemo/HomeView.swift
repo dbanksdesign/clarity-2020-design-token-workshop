@@ -8,15 +8,15 @@
 
 import Foundation
 import SwiftUI
+import ClarityDesignTokens
 
 struct HomeView: View {
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: ClarityDesignTokens.sizePaddingXl) {
             Text("Clarity Design Tokens Demo!")
                 .clarityTypography(.h1)
-            ClarityButton(text: "Fill", style: .fill, action: { print("click") })
-            ClarityBadge(text: "test")
-        }.padding(20)
+//            Image("logo", bundle: Bundle(identifier: "org.cocoapods.ClarityDesignTokens"))
+        }.padding(ClarityDesignTokens.sizePaddingMedium)
     }
 }
 

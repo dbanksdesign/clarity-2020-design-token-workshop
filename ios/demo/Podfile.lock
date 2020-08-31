@@ -1,0 +1,16 @@
+PODS:
+  - ClarityDesignTokens (0.0.1)
+
+DEPENDENCIES:
+  - ClarityDesignTokens (from `../../ClarityDesignTokens.podspec`)
+
+EXTERNAL SOURCES:
+  ClarityDesignTokens:
+    :path: "../../ClarityDesignTokens.podspec"
+
+SPEC CHECKSUMS:
+  ClarityDesignTokens: 451f710074a4c81056569adbd99a382501858753
+
+PODFILE CHECKSUM: bed6c26978652fb9491d2e27f93bf60f2a5ab3f2
+
+COCOAPODS: 1.9.3

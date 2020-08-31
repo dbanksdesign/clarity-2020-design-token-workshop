@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B6854C0DF13F380CBA3A6F3 /* Pods_ClarityDesignTokensDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CAFDEDD499F9186060C200 /* Pods_ClarityDesignTokensDemo.framework */; };
 		26C0355824F9FCE000890025 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C0355724F9FCE000890025 /* BadgeView.swift */; };
 		26C4145D24F43647009EC44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4145C24F43647009EC44D /* AppDelegate.swift */; };
 		26C4145F24F43647009EC44D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4145E24F43647009EC44D /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7577E54B9CAD30DB053C04 /* Pods-ClarityDesignTokensDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClarityDesignTokensDemo.release.xcconfig"; path = "Target Support Files/Pods-ClarityDesignTokensDemo/Pods-ClarityDesignTokensDemo.release.xcconfig"; sourceTree = "<group>"; };
 		26C0355724F9FCE000890025 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		26C4145924F43647009EC44D /* ClarityDesignTokensDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClarityDesignTokensDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C4145C24F43647009EC44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		26C4148924F45180009EC44D /* FontSizeTokensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeTokensView.swift; sourceTree = "<group>"; };
 		26C4148B24F452B1009EC44D /* TypographyTokensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyTokensView.swift; sourceTree = "<group>"; };
 		26C4148D24F453A6009EC44D /* ClarityTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityTypography.swift; sourceTree = "<group>"; };
+		C6DE44C804DA43BF4440049A /* Pods-ClarityDesignTokensDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClarityDesignTokensDemo.debug.xcconfig"; path = "Target Support Files/Pods-ClarityDesignTokensDemo/Pods-ClarityDesignTokensDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E8CAFDEDD499F9186060C200 /* Pods_ClarityDesignTokensDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClarityDesignTokensDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6854C0DF13F380CBA3A6F3 /* Pods_ClarityDesignTokensDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,8 @@
 			children = (
 				26C4145B24F43647009EC44D /* ClarityDesignTokensDemo */,
 				26C4145A24F43647009EC44D /* Products */,
+				4D94DFEE6BC5F98BCA4F3E37 /* Pods */,
+				E3C387DEE44686538CAA3155 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +129,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		4D94DFEE6BC5F98BCA4F3E37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6DE44C804DA43BF4440049A /* Pods-ClarityDesignTokensDemo.debug.xcconfig */,
+				0C7577E54B9CAD30DB053C04 /* Pods-ClarityDesignTokensDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3C387DEE44686538CAA3155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAFDEDD499F9186060C200 /* Pods_ClarityDesignTokensDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26C4146D24F43649009EC44D /* Build configuration list for PBXNativeTarget "ClarityDesignTokensDemo" */;
 			buildPhases = (
+				7D767D107F58FD997198002D /* [CP] Check Pods Manifest.lock */,
 				26C4145524F43647009EC44D /* Sources */,
 				26C4145624F43647009EC44D /* Frameworks */,
 				26C4145724F43647009EC44D /* Resources */,
+				088CC528190C5B222D308F12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +213,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088CC528190C5B222D308F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClarityDesignTokensDemo/Pods-ClarityDesignTokensDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClarityDesignTokensDemo/Pods-ClarityDesignTokensDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClarityDesignTokensDemo/Pods-ClarityDesignTokensDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D767D107F58FD997198002D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClarityDesignTokensDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26C4145524F43647009EC44D /* Sources */ = {
@@ -342,6 +410,7 @@
 		};
 		26C4146E24F43649009EC44D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DE44C804DA43BF4440049A /* Pods-ClarityDesignTokensDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +431,7 @@
 		};
 		26C4146F24F43649009EC44D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7577E54B9CAD30DB053C04 /* Pods-ClarityDesignTokensDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

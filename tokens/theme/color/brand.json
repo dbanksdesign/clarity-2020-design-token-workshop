@@ -2,7 +2,7 @@
   "color": {
     "brand": {
       "primary": {
-        "value": "{color.core.aqua.700.value}"
+        "value": "{color.core.purple.700.value}"
       },
       
       "secondary": {

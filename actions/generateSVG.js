@@ -27,7 +27,7 @@ module.exports = {
       
       
       const resolutions = [1,2,3];
-      const iosPath = `${config.iosPath}${token.name}.imageasset/`;
+      const iosPath = `${config.iosPath}${token.name}.imageset/`;
       fs.ensureDirSync(iosPath);
       const contents = {
         images: [],
@@ -49,7 +49,6 @@ module.exports = {
           .png({ compressionLevel: 0 })
           .toFile(`${iosPath}${fileName}`)
           .then(info => {
-            console.log(info);
             setTimeout(() => null, 0); // forces node to not exit immediately
           });
       });
