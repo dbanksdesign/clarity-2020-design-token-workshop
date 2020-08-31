@@ -18,7 +18,7 @@ module.exports = {
   
   platforms: {
     web: {
-      transformGroup: `web`,
+      transformGroup: `scss`,
       buildPath: `web/dist/`,
       files: [{
         format: `json`,
