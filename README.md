@@ -1,1 +1,1 @@
-# clarity-2019-design-token-workshop
+# Clarity 2020 Design Token Workshop
