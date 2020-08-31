@@ -28,9 +28,9 @@ $color-font-primary : rgba(0, 6, 38, 0.9);
 $color-font-secondary : rgba(0, 6, 38, 0.8);
 $color-font-tertiary : rgba(0, 6, 38, 0.6);
 $color-font-quaternary : rgba(0, 6, 38, 0.4);
-$color-font-link: #017E78;
-$color-font-hover: #017E78;
-$color-font-active: #6A5096;
+$color-font-link: rgba(0, 6, 38, 0.6);
+$color-font-hover: rgba(0, 6, 38, 0.9);
+$color-font-active: rgba(0, 6, 38, 0.9);
 
 $color-background-primary: #fff;
 $color-background-secondary: #F8F7F8;
@@ -42,3 +42,6 @@ $color-background-highlight: hsla(47, 100%, 71%, 0.5);
 $color-border-primary: rgba(0, 6, 38, 0.4);
 $color-border-secondary: rgba(0, 6, 38, 0.2);
 $color-border-tertiary: rgba(0, 6, 38, 0.1);
+
+$size-border-radius-small: 0.25rem;
+$size-border-radius-large: 2rem;

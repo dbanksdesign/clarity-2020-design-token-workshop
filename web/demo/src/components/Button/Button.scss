@@ -1,0 +1,15 @@
+@import "$styles/_variables.scss";
+
+.clarity-button {
+  padding: $size-padding-small $size-padding-xl;
+  border-radius: $size-border-radius-small;
+  
+  &.primary {
+    background-color: $color-font-primary;
+    color: #fff;
+  }
+  
+  &.outline {
+    border: 2px solid $color-border-primary;
+  }
+}

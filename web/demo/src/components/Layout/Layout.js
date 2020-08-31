@@ -33,7 +33,7 @@ const TokensNav = () => {
   return (
     <>
       <NavLink to="/tokens/color">Color</NavLink>
-      <NavLink to="/tokens/spacing">Spacing</NavLink>
+      <NavLink to="/tokens/padding">Padding</NavLink>
       <NavLink to="/tokens/font-size">Font Size</NavLink>
       <NavLink to="/tokens/typography">Typography</NavLink>
     </>

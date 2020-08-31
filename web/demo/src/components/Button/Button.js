@@ -1,9 +1,11 @@
 import React from 'react';
-import './Button.css'
 
-const Button = ({ children }) => {
+// This component uses SCSS and SCSS variables for styling
+import './Button.scss';
+
+const Button = ({ children, variant="default" }) => {
   return (
-    <button className="">
+    <button className={`clarity-button ${variant}`}>
       {children}
     </button>
   )
