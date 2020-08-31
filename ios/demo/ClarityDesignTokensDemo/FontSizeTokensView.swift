@@ -14,23 +14,27 @@ struct FontSizeTokensView: View {
         ScrollView {
             VStack(spacing: ClarityDesignTokens.sizePaddingMedium) {
                 Text(String(format: "Small %.0f", ClarityDesignTokens.sizeFontSmall))
-                    .padding(10)
+                    .padding(ClarityDesignTokens.sizePaddingMedium)
                     .font(.system(size: ClarityDesignTokens.sizeFontSmall))
                 
                 Text(String(format: "Medium %.0f", ClarityDesignTokens.sizeFontMedium))
-                    .padding(10)
+                    .padding(ClarityDesignTokens.sizePaddingMedium)
                     .font(.system(size: ClarityDesignTokens.sizeFontMedium))
                 
                 Text(String(format: "Large %.0f", ClarityDesignTokens.sizeFontLarge))
-                    .padding(10)
+                    .padding(ClarityDesignTokens.sizePaddingMedium)
                     .font(.system(size: ClarityDesignTokens.sizeFontLarge))
                 
                 Text(String(format: "xl %.0f", ClarityDesignTokens.sizeFontXl))
-                    .padding(10)
+                    .padding(ClarityDesignTokens.sizePaddingMedium)
                     .font(.system(size: ClarityDesignTokens.sizeFontXl))
                 
+                Text(String(format: "xxl %.0f", ClarityDesignTokens.sizeFontXxl))
+                    .padding(ClarityDesignTokens.sizePaddingMedium)
+                    .font(.system(size: ClarityDesignTokens.sizeFontXxl))
+                
             }.padding(ClarityDesignTokens.sizePaddingMedium)
-        }.navigationBarTitle("Font size tokens")
+        }.navigationBarTitle("Font sizes")
     }
 }
 

@@ -11,21 +11,35 @@ import SwiftUI
 import ClarityDesignTokens
 
 struct PaddingTokensView: View {
-    
+    var paddingColor = Color(ClarityDesignTokens.colorBrandPrimary)
     var body: some View {
         ScrollView {
             VStack(spacing: ClarityDesignTokens.sizePaddingMedium) {
                 Text(String(format: "Small %.0f", ClarityDesignTokens.sizePaddingSmall)).padding(10)
-                Rectangle().frame(height: ClarityDesignTokens.sizePaddingSmall)
+                Rectangle()
+                    .fill(paddingColor)
+                    .frame(height: ClarityDesignTokens.sizePaddingSmall)
+                
                 Text(String(format: "Medium %.0f", ClarityDesignTokens.sizePaddingMedium)).padding(10)
-                Rectangle().frame(height: ClarityDesignTokens.sizePaddingMedium)
+                Rectangle()
+                    .fill(paddingColor)
+                    .frame(height: ClarityDesignTokens.sizePaddingMedium)
+                
                 Text(String(format: "Large %.0f", ClarityDesignTokens.sizePaddingLarge)).padding(10)
-                Rectangle().frame(height: ClarityDesignTokens.sizePaddingLarge)
+                Rectangle()
+                    .fill(paddingColor)
+                    .frame(height: ClarityDesignTokens.sizePaddingLarge)
+                
                 Text(String(format: "XL %.0f", ClarityDesignTokens.sizePaddingXl)).padding(10)
-                Rectangle().frame(height: ClarityDesignTokens.sizePaddingXl)
+                Rectangle()
+                    .fill(paddingColor)
+                    .frame(height: ClarityDesignTokens.sizePaddingXl)
+                
                 Text(String(format: "XXL %.0f", ClarityDesignTokens.sizePaddingXxl)).padding(10)
-                Rectangle().frame(height: ClarityDesignTokens.sizePaddingXxl)
+                Rectangle()
+                    .fill(paddingColor)
+                    .frame(height: ClarityDesignTokens.sizePaddingXxl)
             }.padding(ClarityDesignTokens.sizePaddingMedium)
-        }.navigationBarTitle("Padding tokens")
+        }.navigationBarTitle("Paddings")
     }
 }

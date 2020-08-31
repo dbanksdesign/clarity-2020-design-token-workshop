@@ -2,9 +2,7 @@
   "component": {
     "typography": {
       "h1": {
-        "font-size": { "value": "{size.font.xxl.value}" },
-        "font-weight": { "value": "bold" },
-        "line-height": { "value": "" }
+        "font-size": { "value": "{size.font.xxl.value}" }
       }
     }
   }

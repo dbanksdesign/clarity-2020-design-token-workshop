@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:textAppearance="?attr/textAppearanceListItem"
-            android:text="Typography"/>
+            android:text="Font sizes"/>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

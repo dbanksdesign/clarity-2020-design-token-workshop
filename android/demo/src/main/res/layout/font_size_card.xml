@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <variable name="paddingToken" type="com.dbanksdesign.claritydesigntokensdemo.model.PaddingToken" />
+        <variable name="fontSizeToken" type="com.dbanksdesign.claritydesigntokensdemo.model.FontSizeToken" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -18,7 +18,7 @@
         app:cardCornerRadius="0dp"
         app:cardBackgroundColor="@color/color_background_primary"
         app:cardElevation="10dp">
-        
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,27 +30,14 @@
                 android:id="@+id/card_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="@{paddingToken.name}"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginVertical="@dimen/size_padding_small"
-                android:paddingTop="@{paddingToken.value}"
-                android:background="@color/color_brand_primary">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp" />
-            </LinearLayout>
+                android:textSize="@{fontSizeToken.value}"
+                android:text="@{fontSizeToken.name}"/>
 
             <TextView
                 android:id="@+id/card_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{paddingToken.id}" />
+                android:text="@{fontSizeToken.id}" />
 
         </LinearLayout>
 

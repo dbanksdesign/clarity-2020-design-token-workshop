@@ -58,7 +58,7 @@ public class ColorsFragment extends Fragment {
                 try {
                     int ref = field.getInt(null);
                     int color = ContextCompat.getColor(this.getContext(), ref);
-                    colorList.add(new ColorToken(name, type, ref));
+                    colorList.add(new ColorToken(name, type, ref, color));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

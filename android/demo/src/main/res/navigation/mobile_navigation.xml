@@ -49,7 +49,7 @@
             app:destination="@id/navigation_padding" />
         <action
             android:id="@+id/action_navigation_tokens_to_navigation_typography"
-            app:destination="@id/navigation_typography" />
+            app:destination="@id/navigation_font_size" />
     </fragment>
 
     <fragment
@@ -61,12 +61,12 @@
     <fragment
         android:id="@+id/navigation_padding"
         android:name="com.dbanksdesign.claritydesigntokensdemo.PaddingFragment"
-        android:label="Padding"
+        android:label="Paddings"
         tools:layout="@layout/fragment_padding" />
 
     <fragment
-        android:id="@+id/navigation_typography"
-        android:name="com.dbanksdesign.claritydesigntokensdemo.TypographyFragment"
-        android:label="Typography"
-        tools:layout="@layout/fragment_typography" />
+        android:id="@+id/navigation_font_size"
+        android:name="com.dbanksdesign.claritydesigntokensdemo.FontSizeFragment"
+        android:label="Font Sizes"
+        tools:layout="@layout/fragment_font_size" />
 </navigation>

@@ -2,11 +2,12 @@ const StyleDictionary = require('style-dictionary');
 
 module.exports = {
   action: {
-    generateSVG: require('./actions/generateSVG')
+    generateSVG: require('./actions/generateSVG'),
   },
   
   transform: {
-    nameComponentCamel: require('./transforms/nameComponentCamel')
+    'attribute/cti': require('./transforms/attributeCTI'),
+    nameComponentCamel: require('./transforms/nameComponentCamel'),
   },
   
   source: [

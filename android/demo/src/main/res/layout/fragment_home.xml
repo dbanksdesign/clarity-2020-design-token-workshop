@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".HomeFragment">
 
     <TextView
@@ -14,13 +15,14 @@
         android:layout_margin="@dimen/size_padding_large"
         android:textAlignment="center"
         android:textSize="@dimen/size_font_large"
-        android:textColor="@color/color_core_aqua_800"
+        android:textColor="@color/color_font_primary"
         android:text="@string/home_fragment_welcome" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="logo"
+        android:layout_marginVertical="@dimen/size_padding_small"
         app:srcCompat="@drawable/logo" />
 
 </LinearLayout>
