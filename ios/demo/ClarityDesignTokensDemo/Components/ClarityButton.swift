@@ -20,6 +20,21 @@ struct ClarityButtonStyle: ButtonStyle {
         case .fill: return AnyView(FillButton(color: color, configuration: configuration))
         case .outline: return AnyView(OutlineButton(color: color, configuration: configuration))
         case .ghost: return AnyView(GhostButton(color: color, configuration: configuration))
+        case .primary: return AnyView(PrimaryButton(configuration: configuration))
+        }
+    }
+    
+    struct PrimaryButton: View {
+        let configuration: ButtonStyle.Configuration
+        @Environment(\.isEnabled) private var isEnabled: Bool
+        var body: some View {
+            configuration.label
+                .foregroundColor(Tokens.componentButtonPrimaryColor)
+                .padding()
+                .frame(minHeight: 56)
+                .background(Tokens.componentButtonPrimaryBackgroundColor)
+                .cornerRadius(4)
+                .opacity(configuration.isPressed ? 0.7 : 1)
         }
     }
     
@@ -45,14 +60,14 @@ struct ClarityButtonStyle: ButtonStyle {
         var body: some View {
             configuration.label
 //                .brTypo(.s1)
-                .foregroundColor(isEnabled ? color : .black)
+                .foregroundColor(Tokens.componentButtonColor)
                 .padding()
                 .frame(minHeight: 56)
-                .background(isEnabled ? color.opacity(0.2) : Color.white.opacity(0.15))
+                .background(Color.white.opacity(0.15))
                 .cornerRadius(4)
                 .overlay(
                     RoundedRectangle(cornerRadius: 4)
-                        .stroke(isEnabled ? color : Color.black.opacity(0.5), lineWidth: 1)
+                        .stroke(Tokens.componentButtonBorderColor, lineWidth: Tokens.componentButtonBorderWidth)
                 )
                 .opacity(configuration.isPressed ? 0.7 : 1)
         }
@@ -87,7 +102,7 @@ extension Button {
 struct ClarityButton: View {
     
     enum Style {
-        case fill, outline, ghost
+        case fill, outline, ghost, primary
     }
     
     var text: String?

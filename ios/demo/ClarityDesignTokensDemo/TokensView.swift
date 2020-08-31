@@ -16,8 +16,8 @@ struct TokensView: View {
                 NavigationLink(destination: ColorTokensView()) {
                     Text("Colors")
                 }
-                NavigationLink(destination: SpaceTokensView()) {
-                    Text("Spaces")
+                NavigationLink(destination: PaddingTokensView()) {
+                    Text("Paddings")
                 }
                 NavigationLink(destination: FontSizeTokensView()) {
                     Text("Font Sizes")

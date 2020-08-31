@@ -12,12 +12,9 @@ import SwiftUI
 struct ButtonView: View {
     var body: some View {
         VStack(spacing: 20) {
-            Button(action: {
-                print("hello world")
-            }) {
-                Text("Help")
-                    .background(Color.blue)
-            }
-        }.navigationBarTitle("Buttons")
+            ClarityButton(text: "Fill", style: .primary, action: { print("click") })
+            ClarityButton(text: "Outline", style: .outline, action: { print("click") })
+        }.padding(20)
+            .navigationBarTitle("Buttons")
     }
 }

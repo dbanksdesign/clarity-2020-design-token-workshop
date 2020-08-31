@@ -14,16 +14,32 @@ struct ClarityBadge: View {
         case
         danger,
         warning,
+        success,
         none
         
-        func getValue() -> Color {
+        func getBackgroundColor() -> Color {
             switch self {
             case .danger:
-                return Color.red
+                return Tokens.componentBadgeBackgroundColor
             case .warning:
-                return Color.orange
+                return Tokens.componentBadgeBackgroundColor
+            case .success:
+                return Tokens.componentBadgeBackgroundColor
             case .none:
-                return Color.blue
+                return Tokens.componentBadgeBackgroundColor
+            }
+        }
+        
+        func getTextColor() -> Color {
+            switch self {
+            case .danger:
+                return Tokens.componentBadgeColor
+            case .warning:
+                return Tokens.componentBadgeColor
+            case .success:
+                return Tokens.componentBadgeColor
+            case .none:
+                return Tokens.componentBadgeColor
             }
         }
     }
@@ -34,11 +50,11 @@ struct ClarityBadge: View {
     
     public var body: some View {
         HStack {
-            Text(text)
+            Text(text).foregroundColor(type.getTextColor())
         }
         .padding(.vertical, 5)
         .padding(.horizontal, 10)
-        .background(color ?? type.getValue())
+        .background(color ?? type.getBackgroundColor())
         .cornerRadius(20)
     }
 }

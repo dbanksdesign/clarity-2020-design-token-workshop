@@ -24,7 +24,7 @@ struct ContentView: View {
                 Image(systemName: "slider.horizontal.3")
                 Text("Tokens")
             }
-        }
+        }.accentColor(Tokens.colorBrandPrimary)
     }
 }
 

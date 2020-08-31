@@ -14,8 +14,7 @@ struct HomeView: View {
         VStack(spacing: 20) {
             Text("Clarity Design Tokens Demo!")
                 .clarityTypography(.h1)
-            ClarityButton(text: "Fill", style: .fill, action: { print("click") })
-            ClarityBadge(text: "test")
+            Image("logo")
         }.padding(20)
     }
 }
