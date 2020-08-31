@@ -1,0 +1,58 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- These attributes customize the Material theme used on our app. -->
+        <item name="colorPrimary">@color/color_brand_primary</item>
+        <item name="colorPrimaryDark">@color/color_brand_primary_dark</item>
+        <item name="colorAccent">@color/color_brand_secondary</item>
+        <item name="colorOnPrimary">@color/color_font_inverse</item>
+        <item name="colorOnSurface">@color/color_font_primary</item>
+        <item name="colorSurface">@color/color_background_primary</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="chipIconTint">@color/component_badge_color</item>
+        <item name="chipBackgroundColor">@color/component_badge_background_color</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="closeIconTint">@color/component_badge_color</item>
+        <item name="android:textColor">@color/component_badge_color</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <!-- Using the dot notation, this will inherit from Widget.App.Chip -->
+    <style name="Widget.App.Chip.Danger">
+        <item name="chipIconTint">@color/component_badge_danger_background_color</item>
+        <item name="chipBackgroundColor">@color/component_badge_danger_background_color</item>
+        <item name="closeIconTint">@color/component_badge_danger_color</item>
+        <item name="android:textColor">@color/component_badge_danger_color</item>
+    </style>
+
+    <style name="Widget.App.Chip.Warning">
+        <item name="chipIconTint">@color/component_badge_warning_color</item>
+        <item name="chipBackgroundColor">@color/component_badge_warning_background_color</item>
+        <item name="closeIconTint">@color/component_badge_warning_color</item>
+        <item name="android:textColor">@color/component_badge_warning_color</item>
+    </style>
+
+    <style name="Widget.App.Chip.Success">
+        <item name="chipIconTint">@color/component_badge_success_color</item>
+        <item name="chipBackgroundColor">@color/component_badge_success_background_color</item>
+        <item name="closeIconTint">@color/component_badge_success_color</item>
+        <item name="android:textColor">@color/component_badge_success_color</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/component_button_primary_background_color</item>
+        <item name="android:textColor">@color/component_button_primary_color</item>
+        <item name="android:paddingHorizontal">@dimen/component_button_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/component_button_padding_vertical</item>
+    </style>
+
+    <style name="Widget.App.Button.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/component_button_border_color</item>
+        <item name="strokeWidth">@dimen/component_button_border_width</item>
+        <item name="android:paddingHorizontal">@dimen/component_button_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/component_button_padding_vertical</item>
+    </style>
+</resources>

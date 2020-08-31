@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="paddingToken" type="com.dbanksdesign.claritydesigntokensdemo.model.PaddingToken" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_padding_small"
+        android:layout_marginLeft="@dimen/size_padding_small"
+        android:layout_marginRight="@dimen/size_padding_small"
+        android:padding="@dimen/size_padding_small"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/color_background_primary"
+        app:cardElevation="10dp">
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_padding_small">
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@{paddingToken.name}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/size_padding_small"
+                android:paddingTop="@{paddingToken.value}"
+                android:background="@color/color_brand_primary">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{paddingToken.id}" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

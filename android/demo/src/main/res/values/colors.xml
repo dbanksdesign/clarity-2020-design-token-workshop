@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_background_primary">#ffffffff</color>
+    <color name="color_background_secondary">#fff3f4f4</color>
+    <color name="color_background_tertiary">#ffdee1e1</color>
+    <color name="color_background_danger">#ffffeae9</color>
+    <color name="color_background_warning">#fffff8e2</color>
+    <color name="color_background_success">#ffebf9eb</color>
+    <color name="color_background_info">#ffe9f8ff</color>
+    <color name="color_background_disabled">#ffdee1e1</color>
+    <color name="color_border_primary">#ffc8cccc</color>
+    <color name="color_border_secondary">#ffdee1e1</color>
+    <color name="color_border_tertiary">#fff3f4f4</color>
+    <color name="color_brand_primary">#ff273333</color>
+    <color name="color_brand_primary_dark">#ff040404</color>
+    <color name="color_brand_secondary">#ff273333</color>
+    <color name="color_brand_secondary_dark">#ff040404</color>
+    <color name="color_font_primary">#ff040404</color>
+    <color name="color_font_secondary">#ff273333</color>
+    <color name="color_font_tertiary">#ff364141</color>
+    <color name="color_font_inverse">#ffffffff</color>
+    <color name="color_font_interactive">#ff364141</color>
+    <color name="color_font_hover">#ff040404</color>
+    <color name="color_font_active">#ff040404</color>
+    <color name="color_font_disabled">#ff364141</color>
+    <color name="color_font_danger">#ff040404</color>
+    <color name="color_font_warning">#ff040404</color>
+    <color name="color_font_success">#ff040404</color>
+    <color name="component_badge_background_color">#ffc8cccc</color>
+    <color name="component_badge_color">#ff040404</color>
+    <color name="component_badge_danger_background_color">#ffc8cccc</color>
+    <color name="component_badge_danger_color">#ff040404</color>
+    <color name="component_badge_warning_background_color">#ffc8cccc</color>
+    <color name="component_badge_warning_color">#ff040404</color>
+    <color name="component_badge_success_background_color">#ffc8cccc</color>
+    <color name="component_badge_success_color">#ff040404</color>
+
+    <color name="component_button_color">#ff040404</color>
+    <color name="component_button_border_color">#ffc8cccc</color>
+    <color name="component_button_primary_background_color">#ff040404</color>
+    <color name="component_button_primary_color">#ffffffff</color>
+</resources>
