@@ -1,6 +1,12 @@
+const StyleDictionary = require('style-dictionary');
+
 module.exports = {
   action: {
     generateSVG: require('./actions/generateSVG')
+  },
+  
+  transform: {
+    nameComponentCamel: require('./transforms/nameComponentCamel')
   },
   
   source: [
@@ -67,6 +73,22 @@ module.exports = {
         destination: `ClarityDesignTokens.swift`,
         className: `ClarityDesignTokens`,
         format: `ios-swift/class.swift`
+      }]
+    },
+    
+    iosComponents: {
+      transforms: StyleDictionary.transformGroup[`ios-swift-separate`].concat('nameComponentCamel'),
+      buildPath: `ios/dist/`,
+      files: [{
+        destination: `BadgeTokens.swift`,
+        className: `BadgeTokens`,
+        format: `ios-swift/enum.swift`,
+        filter: (token) => token.path[1] === 'badge'
+      },{
+        destination: `ButtonTokens.swift`,
+        className: `ButtonTokens`,
+        format: `ios-swift/enum.swift`,
+        filter: (token) => token.path[1] === 'button'
       }]
     }
   }

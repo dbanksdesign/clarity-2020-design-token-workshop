@@ -2,8 +2,8 @@
   "component": {
     "button": {
       "font-size": { "value": "{size.font.small.value}" },
-      "padding": {},
-      "color": {},
+      "padding": { "value": "{size.padding.base.value}" },
+      "color": { "value": "{color.font.interactive.value}" },
       
       "primary": {
         "background-color": {},

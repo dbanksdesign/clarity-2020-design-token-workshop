@@ -7,38 +7,30 @@
 //
 
 import SwiftUI
+import ClarityDesignTokens
 
 struct FontSizeTokensView: View {
-    var small = CGFloat(12)
-    var medium = CGFloat(18)
-    var large = CGFloat(24)
-    var xl = CGFloat(36)
-    var xxl = CGFloat(52)
-    
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                Text(String(format: "Small %.0f", small))
+            VStack(spacing: ClarityDesignTokens.sizePaddingMedium) {
+                Text(String(format: "Small %.0f", ClarityDesignTokens.sizeFontSmall))
                     .padding(10)
-                    .font(.system(size: small))
+                    .font(.system(size: ClarityDesignTokens.sizeFontSmall))
                 
-                Text(String(format: "Medium %.0f", medium))
+                Text(String(format: "Medium %.0f", ClarityDesignTokens.sizeFontMedium))
                     .padding(10)
-                    .font(.system(size: medium))
+                    .font(.system(size: ClarityDesignTokens.sizeFontMedium))
                 
-                Text(String(format: "Large %.0f", large))
+                Text(String(format: "Large %.0f", ClarityDesignTokens.sizeFontLarge))
                     .padding(10)
-                    .font(.system(size: large))
+                    .font(.system(size: ClarityDesignTokens.sizeFontLarge))
                 
-                Text(String(format: "xl %.0f", xl))
+                Text(String(format: "xl %.0f", ClarityDesignTokens.sizeFontXl))
                     .padding(10)
-                    .font(.system(size: xl))
+                    .font(.system(size: ClarityDesignTokens.sizeFontXl))
                 
-                Text(String(format: "xxl %.0f", xxl))
-                    .padding(10)
-                    .font(.system(size: xxl))
-            }.padding(medium)
-        }.navigationBarTitle("FontSize tokens")
+            }.padding(ClarityDesignTokens.sizePaddingMedium)
+        }.navigationBarTitle("Font size tokens")
     }
 }
 

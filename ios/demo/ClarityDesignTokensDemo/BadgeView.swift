@@ -13,8 +13,8 @@ struct BadgeView: View {
         VStack(spacing: 20) {
             ClarityBadge(text: "Warning", type: .warning)
             ClarityBadge(text: "Danger", type: .danger)
+            ClarityBadge(text: "Success", type: .success)
             ClarityBadge(text: "Default")
-            ClarityBadge(text: "Custom", color: Color.green)
         }.navigationBarTitle("Badges")
     }
 }

@@ -19,7 +19,7 @@
 		26C4147824F4368C009EC44D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4147224F4368C009EC44D /* HomeView.swift */; };
 		26C4147A24F4368C009EC44D /* ColorTokensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4147424F4368C009EC44D /* ColorTokensView.swift */; };
 		26C4147B24F4368C009EC44D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4147524F4368C009EC44D /* ButtonView.swift */; };
-		26C4147E24F4369A009EC44D /* SpaceTokensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4147C24F4369A009EC44D /* SpaceTokensView.swift */; };
+		26C4147E24F4369A009EC44D /* PaddingTokensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4147C24F4369A009EC44D /* PaddingTokensView.swift */; };
 		26C4147F24F4369A009EC44D /* TokensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4147D24F4369A009EC44D /* TokensView.swift */; };
 		26C4148124F43B9F009EC44D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4148024F43B9F009EC44D /* ContentView.swift */; };
 		26C4148624F43E5B009EC44D /* ClarityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4148524F43E5B009EC44D /* ClarityButton.swift */; };
@@ -44,7 +44,7 @@
 		26C4147224F4368C009EC44D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		26C4147424F4368C009EC44D /* ColorTokensView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTokensView.swift; sourceTree = "<group>"; };
 		26C4147524F4368C009EC44D /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		26C4147C24F4369A009EC44D /* SpaceTokensView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceTokensView.swift; sourceTree = "<group>"; };
+		26C4147C24F4369A009EC44D /* PaddingTokensView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTokensView.swift; sourceTree = "<group>"; };
 		26C4147D24F4369A009EC44D /* TokensView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensView.swift; sourceTree = "<group>"; };
 		26C4148024F43B9F009EC44D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26C4148524F43E5B009EC44D /* ClarityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityButton.swift; sourceTree = "<group>"; };
@@ -91,8 +91,9 @@
 			children = (
 				26C4148424F43E3C009EC44D /* Components */,
 				26C4148024F43B9F009EC44D /* ContentView.swift */,
-				26C4147C24F4369A009EC44D /* SpaceTokensView.swift */,
+				26C4147C24F4369A009EC44D /* PaddingTokensView.swift */,
 				26C4147D24F4369A009EC44D /* TokensView.swift */,
+				26C0355724F9FCE000890025 /* BadgeView.swift */,
 				26C4147524F4368C009EC44D /* ButtonView.swift */,
 				26C4147124F4368C009EC44D /* ColorRow.swift */,
 				26C4147424F4368C009EC44D /* ColorTokensView.swift */,
@@ -106,7 +107,6 @@
 				26C4146424F43649009EC44D /* Preview Content */,
 				26C4148924F45180009EC44D /* FontSizeTokensView.swift */,
 				26C4148B24F452B1009EC44D /* TypographyTokensView.swift */,
-				26C0355724F9FCE000890025 /* BadgeView.swift */,
 			);
 			path = ClarityDesignTokensDemo;
 			sourceTree = "<group>";
@@ -265,7 +265,7 @@
 				26C4147724F4368C009EC44D /* ColorRow.swift in Sources */,
 				26C4147624F4368C009EC44D /* ComponentsView.swift in Sources */,
 				26C4147F24F4369A009EC44D /* TokensView.swift in Sources */,
-				26C4147E24F4369A009EC44D /* SpaceTokensView.swift in Sources */,
+				26C4147E24F4369A009EC44D /* PaddingTokensView.swift in Sources */,
 				26C4145D24F43647009EC44D /* AppDelegate.swift in Sources */,
 				26C4148A24F45180009EC44D /* FontSizeTokensView.swift in Sources */,
 				26C4147824F4368C009EC44D /* HomeView.swift in Sources */,

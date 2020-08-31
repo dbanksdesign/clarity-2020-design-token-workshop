@@ -15,7 +15,7 @@ struct HomeView: View {
         VStack(spacing: ClarityDesignTokens.sizePaddingXl) {
             Text("Clarity Design Tokens Demo!")
                 .clarityTypography(.h1)
-//            Image("logo", bundle: Bundle(identifier: "org.cocoapods.ClarityDesignTokens"))
+            Image("logo", bundle: Bundle(identifier: "org.cocoapods.ClarityDesignTokens"))
         }.padding(ClarityDesignTokens.sizePaddingMedium)
     }
 }

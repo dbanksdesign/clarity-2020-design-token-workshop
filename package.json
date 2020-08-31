@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/dbanksdesign/clarity-2020-design-token-workshop#readme",
   "devDependencies": {
+    "case": "^1.6.3",
     "chokidar-cli": "^2.1.0",
     "fs-extra": "^9.0.1",
     "lodash": "^4.17.20",

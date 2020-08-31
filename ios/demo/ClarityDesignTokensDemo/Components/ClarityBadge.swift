@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import ClarityDesignTokens
 
 struct ClarityBadge: View {
     
@@ -14,16 +15,32 @@ struct ClarityBadge: View {
         case
         danger,
         warning,
+        success,
         none
         
-        func getValue() -> Color {
+        func getBackgroundColor() -> Color {
             switch self {
             case .danger:
-                return Color.red
+                return Color(BadgeTokens.dangerBackgroundColor)
             case .warning:
-                return Color.orange
+                return Color(BadgeTokens.warningBackgroundColor)
+            case .success:
+                return Color(BadgeTokens.successBackgroundColor)
             case .none:
-                return Color.blue
+                return Color(BadgeTokens.backgroundColor)
+            }
+        }
+        
+        func getTextColor() -> Color {
+            switch self {
+            case .danger:
+                return Color(BadgeTokens.dangerColor)
+            case .warning:
+                return Color(BadgeTokens.warningColor)
+            case .success:
+                return Color(BadgeTokens.successColor)
+            case .none:
+                return Color(BadgeTokens.color)
             }
         }
     }
@@ -34,12 +51,12 @@ struct ClarityBadge: View {
     
     public var body: some View {
         HStack {
-            Text(text)
+            Text(text).foregroundColor(type.getTextColor())
         }
-        .padding(.vertical, 5)
-        .padding(.horizontal, 10)
-        .background(color ?? type.getValue())
-        .cornerRadius(20)
+        .padding(.vertical, BadgeTokens.paddingVertical)
+        .padding(.horizontal, BadgeTokens.paddingHorizontal)
+        .background(color ?? type.getBackgroundColor())
+        .cornerRadius(BadgeTokens.borderRadius)
     }
 }
 
