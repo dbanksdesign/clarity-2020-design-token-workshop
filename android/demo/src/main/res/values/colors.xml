@@ -36,7 +36,7 @@
     <color name="component_badge_success_color">#ff040404</color>
 
     <color name="component_button_color">#ff040404</color>
-    <color name="component_button_border_color">#ffc8cccc</color>
+    <color name="component_button_outline_border_color">#ffc8cccc</color>
     <color name="component_button_primary_background_color">#ff040404</color>
     <color name="component_button_primary_color">#ffffffff</color>
 </resources>
