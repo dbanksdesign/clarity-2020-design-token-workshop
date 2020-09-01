@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DF4503B3D6825B216CAAB06A159C3E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3BC00938E8572450F27C12B30171D4D1 /* ClarityDesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC45B992F34FF9AA7313329B1898423 /* ClarityDesignTokens.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		00ED9A24DA8F8236073EB951B8219D4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		05C09A9FD93C756C0CC5DE4AE02872F6 /* BadgeTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5956B03E76D436D79BAFD4E1E794C /* BadgeTokens.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5950861BE2513D2B9BD8825AA5BF7DEF /* Pods-ClarityDesignTokensDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA34C306AF296F4006D0DD74FC91235 /* Pods-ClarityDesignTokensDemo-dummy.m */; };
+		5E374A45DD05EAB7731A5F133D60338B /* ClarityDesignTokens-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68ABD8DB343E2FE3DDBE5677C81D4F25 /* ClarityDesignTokens-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BC90F8358FB01EDE6F3DDDAE2477606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		75D608B03D7C8C401A6D235D7B910CFC /* ClarityDesignTokens-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDED1ABD6F255136C3F9FE97C880D449 /* ClarityDesignTokens-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79EB0F22866F0D75F0CB8F16988E184 /* ClarityDesignTokens-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 066294C57BFA31797A110C5D4A52B78B /* ClarityDesignTokens-dummy.m */; };
+		B2D35043B5FB1DBAA7D53874EF17CAF9 /* ClarityDesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FB1A0E9E0A5EA846C38D0730029D /* ClarityDesignTokens.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E6C31850670C04257D439739C9A00ADC /* Pods-ClarityDesignTokensDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 694D895069529CFC4001D993CE23DC22 /* Pods-ClarityDesignTokensDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7BBBABC8E86621B65E50AA36B0B2A9E /* ClarityDesignTokens-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F617A16A2650BB805C5EC925C0B3A6E /* ClarityDesignTokens-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,37 +28,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07A5993B7EE40F7EFFBC9070C97C7602 /* ClarityDesignTokens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ClarityDesignTokens.release.xcconfig; sourceTree = "<group>"; };
+		066294C57BFA31797A110C5D4A52B78B /* ClarityDesignTokens-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ClarityDesignTokens-dummy.m"; sourceTree = "<group>"; };
 		09DC31D700CB2CCE2A2738AFDA1C89AC /* Pods-ClarityDesignTokensDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClarityDesignTokensDemo-Info.plist"; sourceTree = "<group>"; };
-		1A8B9C73A913F071FC9F3D2075AAC0F2 /* ClarityDesignTokens-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ClarityDesignTokens-prefix.pch"; sourceTree = "<group>"; };
-		1EAE164300A1CE1F75A4C83CF841404F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		2BC45B992F34FF9AA7313329B1898423 /* ClarityDesignTokens.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClarityDesignTokens.swift; path = ios/dist/ClarityDesignTokens.swift; sourceTree = "<group>"; };
+		2B63FB1A0E9E0A5EA846C38D0730029D /* ClarityDesignTokens.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClarityDesignTokens.swift; path = ios/dist/ClarityDesignTokens.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35408B56213DF143167655A3DC70F450 /* Pods-ClarityDesignTokensDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClarityDesignTokensDemo-frameworks.sh"; sourceTree = "<group>"; };
+		5DF8E7F0D95ED38415CE04AA6EBF1693 /* ClarityDesignTokens.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ClarityDesignTokens.modulemap; sourceTree = "<group>"; };
+		68ABD8DB343E2FE3DDBE5677C81D4F25 /* ClarityDesignTokens-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ClarityDesignTokens-umbrella.h"; sourceTree = "<group>"; };
 		694D895069529CFC4001D993CE23DC22 /* Pods-ClarityDesignTokensDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClarityDesignTokensDemo-umbrella.h"; sourceTree = "<group>"; };
-		6BF5745A7F11FD9F6696BE27EFF2C97E /* ClarityDesignTokens-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ClarityDesignTokens-Info.plist"; sourceTree = "<group>"; };
 		77257DF73E333013F65E0C10746554F7 /* Pods-ClarityDesignTokensDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClarityDesignTokensDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		7C032933F55094722EC999129F8EFBFB /* Pods-ClarityDesignTokensDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClarityDesignTokensDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		830CA00170B932FA26C1D681C524F154 /* ClarityDesignTokens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ClarityDesignTokens.debug.xcconfig; sourceTree = "<group>"; };
-		8F617A16A2650BB805C5EC925C0B3A6E /* ClarityDesignTokens-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ClarityDesignTokens-dummy.m"; sourceTree = "<group>"; };
-		958F77DC41E333F6EFB33C565FE51FE1 /* ClarityDesignTokens.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ClarityDesignTokens.modulemap; sourceTree = "<group>"; };
+		8277E0FD30D3B5273B9FA79D46B165C4 /* ClarityDesignTokens-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ClarityDesignTokens-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A36F66C5CF99D94BE0370D02EAEEEF9E /* ClarityDesignTokens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ClarityDesignTokens.release.xcconfig; sourceTree = "<group>"; };
 		B144E449A2A4996FB0FD4E77328D7FA7 /* Pods-ClarityDesignTokensDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ClarityDesignTokensDemo.modulemap"; sourceTree = "<group>"; };
 		BFA34C306AF296F4006D0DD74FC91235 /* Pods-ClarityDesignTokensDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClarityDesignTokensDemo-dummy.m"; sourceTree = "<group>"; };
 		C18971EDF03D92DEAD58E2BE163F2E98 /* Pods_ClarityDesignTokensDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClarityDesignTokensDemo.framework; path = "Pods-ClarityDesignTokensDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25D076C60CBE2F2B1FFE6C263DB5C54 /* Pods-ClarityDesignTokensDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClarityDesignTokensDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C5E2EEE64EB4DAC1901CBD2EC5421303 /* ClarityDesignTokens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ClarityDesignTokens.framework; path = ClarityDesignTokens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E61AE4B462AD61462C620C636E1893E7 /* ClarityDesignTokens.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ClarityDesignTokens.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CFD5956B03E76D436D79BAFD4E1E794C /* BadgeTokens.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BadgeTokens.swift; path = ios/dist/BadgeTokens.swift; sourceTree = "<group>"; };
+		E5E71CE8E1C8ED59F4E4DA93B83026FD /* ClarityDesignTokens-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ClarityDesignTokens-prefix.pch"; sourceTree = "<group>"; };
+		E60645005031917B43310477C55AAF99 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EAE486ABC29F762DD8D4575F715FA949 /* ClarityDesignTokens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ClarityDesignTokens.debug.xcconfig; sourceTree = "<group>"; };
+		EF9CB8F5823F5F2D915EB13C05B30538 /* ClarityDesignTokens.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ClarityDesignTokens.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F64EF42FA521F8292CA9339BAB571A35 /* Pods-ClarityDesignTokensDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClarityDesignTokensDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDED1ABD6F255136C3F9FE97C880D449 /* ClarityDesignTokens-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ClarityDesignTokens-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6A674007CFDE3B2029690188762B70FF /* Frameworks */ = {
+		617B6026B34DE8821738708771C696D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF4503B3D6825B216CAAB06A159C3E8 /* Foundation.framework in Frameworks */,
+				00ED9A24DA8F8236073EB951B8219D4B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,36 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09BE2C18CB68801FF70F39E1848ACCA6 /* Support Files */ = {
+		1725F02A329E72C4D20F384EF1083A95 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				958F77DC41E333F6EFB33C565FE51FE1 /* ClarityDesignTokens.modulemap */,
-				8F617A16A2650BB805C5EC925C0B3A6E /* ClarityDesignTokens-dummy.m */,
-				6BF5745A7F11FD9F6696BE27EFF2C97E /* ClarityDesignTokens-Info.plist */,
-				1A8B9C73A913F071FC9F3D2075AAC0F2 /* ClarityDesignTokens-prefix.pch */,
-				FDED1ABD6F255136C3F9FE97C880D449 /* ClarityDesignTokens-umbrella.h */,
-				830CA00170B932FA26C1D681C524F154 /* ClarityDesignTokens.debug.xcconfig */,
-				07A5993B7EE40F7EFFBC9070C97C7602 /* ClarityDesignTokens.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "ios/demo/Pods/Target Support Files/ClarityDesignTokens";
-			sourceTree = "<group>";
-		};
-		11CE8010CE9593D0170F4F4598631229 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E61AE4B462AD61462C620C636E1893E7 /* ClarityDesignTokens.podspec */,
-				1EAE164300A1CE1F75A4C83CF841404F /* README.md */,
+				EF9CB8F5823F5F2D915EB13C05B30538 /* ClarityDesignTokens.podspec */,
+				E60645005031917B43310477C55AAF99 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		135AA5C98AFBF75C3DA9AD5E95EB618F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D211610778062B4100B05B1A2EB9477D /* ClarityDesignTokens */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		1EF625E7C35E6F574760D2D9A4EC1CA2 /* Targets Support Files */ = {
@@ -118,6 +97,21 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4003FFB195F4FE572A422BCDF9251E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8E7F0D95ED38415CE04AA6EBF1693 /* ClarityDesignTokens.modulemap */,
+				066294C57BFA31797A110C5D4A52B78B /* ClarityDesignTokens-dummy.m */,
+				8277E0FD30D3B5273B9FA79D46B165C4 /* ClarityDesignTokens-Info.plist */,
+				E5E71CE8E1C8ED59F4E4DA93B83026FD /* ClarityDesignTokens-prefix.pch */,
+				68ABD8DB343E2FE3DDBE5677C81D4F25 /* ClarityDesignTokens-umbrella.h */,
+				EAE486ABC29F762DD8D4575F715FA949 /* ClarityDesignTokens.debug.xcconfig */,
+				A36F66C5CF99D94BE0370D02EAEEEF9E /* ClarityDesignTokens.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "ios/demo/Pods/Target Support Files/ClarityDesignTokens";
 			sourceTree = "<group>";
 		};
 		C9ABBABD8DEFF623FDF55C3C3E040F68 /* Pods-ClarityDesignTokensDemo */ = {
@@ -141,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				135AA5C98AFBF75C3DA9AD5E95EB618F /* Development Pods */,
+				FC2B3C7B1AC754CBD9EFD0BC01333A09 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				F9600497F3A51DFA908292BDB21A5862 /* Products */,
 				1EF625E7C35E6F574760D2D9A4EC1CA2 /* Targets Support Files */,
@@ -156,12 +150,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D211610778062B4100B05B1A2EB9477D /* ClarityDesignTokens */ = {
+		EA7485D4058D85DC71E15EAA532EC583 /* ClarityDesignTokens */ = {
 			isa = PBXGroup;
 			children = (
-				2BC45B992F34FF9AA7313329B1898423 /* ClarityDesignTokens.swift */,
-				11CE8010CE9593D0170F4F4598631229 /* Pod */,
-				09BE2C18CB68801FF70F39E1848ACCA6 /* Support Files */,
+				CFD5956B03E76D436D79BAFD4E1E794C /* BadgeTokens.swift */,
+				2B63FB1A0E9E0A5EA846C38D0730029D /* ClarityDesignTokens.swift */,
+				1725F02A329E72C4D20F384EF1083A95 /* Pod */,
+				C4003FFB195F4FE572A422BCDF9251E9 /* Support Files */,
 			);
 			name = ClarityDesignTokens;
 			path = ../../..;
@@ -176,22 +171,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FC2B3C7B1AC754CBD9EFD0BC01333A09 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA7485D4058D85DC71E15EAA532EC583 /* ClarityDesignTokens */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		850ADF1A55FC3F3F9FF08BA50A5442A7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75D608B03D7C8C401A6D235D7B910CFC /* ClarityDesignTokens-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2357705DB3CADE37941B4DBADE3CC05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E6C31850670C04257D439739C9A00ADC /* Pods-ClarityDesignTokensDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66C14B1BCA5B2CE69BB89C8B746B3A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E374A45DD05EAB7731A5F133D60338B /* ClarityDesignTokens-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,12 +222,12 @@
 		};
 		AE52DB8EB710295A5FD5EFF085AD9A00 /* ClarityDesignTokens */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31D867B8CA22CB98773EB2027D0544AF /* Build configuration list for PBXNativeTarget "ClarityDesignTokens" */;
+			buildConfigurationList = 126E14FA2183204FAF7384DEDCFEF9B5 /* Build configuration list for PBXNativeTarget "ClarityDesignTokens" */;
 			buildPhases = (
-				850ADF1A55FC3F3F9FF08BA50A5442A7 /* Headers */,
-				A479605909B9836D4EDF58A3247ED473 /* Sources */,
-				6A674007CFDE3B2029690188762B70FF /* Frameworks */,
-				9E4F6072960F488735021D607CB3B135 /* Resources */,
+				E66C14B1BCA5B2CE69BB89C8B746B3A1 /* Headers */,
+				A072AF8F000F65C878CD1A5DFE9E314E /* Sources */,
+				617B6026B34DE8821738708771C696D9 /* Frameworks */,
+				1F724DC7345A17C7AE2D1A2A0B5C2591 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -264,7 +267,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9E4F6072960F488735021D607CB3B135 /* Resources */ = {
+		1F724DC7345A17C7AE2D1A2A0B5C2591 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,12 +292,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A479605909B9836D4EDF58A3247ED473 /* Sources */ = {
+		A072AF8F000F65C878CD1A5DFE9E314E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BBBABC8E86621B65E50AA36B0B2A9E /* ClarityDesignTokens-dummy.m in Sources */,
-				3BC00938E8572450F27C12B30171D4D1 /* ClarityDesignTokens.swift in Sources */,
+				05C09A9FD93C756C0CC5DE4AE02872F6 /* BadgeTokens.swift in Sources */,
+				A79EB0F22866F0D75F0CB8F16988E184 /* ClarityDesignTokens-dummy.m in Sources */,
+				B2D35043B5FB1DBAA7D53874EF17CAF9 /* ClarityDesignTokens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,9 +455,45 @@
 			};
 			name = Debug;
 		};
-		7C4EC01063969FDED1B00EFABC586CF9 /* Debug */ = {
+		3E2570AC353BC0E789691AF87131B5BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830CA00170B932FA26C1D681C524F154 /* ClarityDesignTokens.debug.xcconfig */;
+			baseConfigurationReference = A36F66C5CF99D94BE0370D02EAEEEF9E /* ClarityDesignTokens.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ClarityDesignTokens/ClarityDesignTokens-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ClarityDesignTokens/ClarityDesignTokens-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ClarityDesignTokens/ClarityDesignTokens.modulemap";
+				PRODUCT_MODULE_NAME = ClarityDesignTokens;
+				PRODUCT_NAME = ClarityDesignTokens;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6377A0C7E218783423949DF78EEA19E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE486ABC29F762DD8D4575F715FA949 /* ClarityDesignTokens.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -546,50 +586,14 @@
 			};
 			name = Release;
 		};
-		98DDEB2CC0755B4A1489A74F9BF577D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A5993B7EE40F7EFFBC9070C97C7602 /* ClarityDesignTokens.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ClarityDesignTokens/ClarityDesignTokens-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ClarityDesignTokens/ClarityDesignTokens-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ClarityDesignTokens/ClarityDesignTokens.modulemap";
-				PRODUCT_MODULE_NAME = ClarityDesignTokens;
-				PRODUCT_NAME = ClarityDesignTokens;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31D867B8CA22CB98773EB2027D0544AF /* Build configuration list for PBXNativeTarget "ClarityDesignTokens" */ = {
+		126E14FA2183204FAF7384DEDCFEF9B5 /* Build configuration list for PBXNativeTarget "ClarityDesignTokens" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C4EC01063969FDED1B00EFABC586CF9 /* Debug */,
-				98DDEB2CC0755B4A1489A74F9BF577D1 /* Release */,
+				6377A0C7E218783423949DF78EEA19E5 /* Debug */,
+				3E2570AC353BC0E789691AF87131B5BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

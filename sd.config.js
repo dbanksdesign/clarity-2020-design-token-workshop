@@ -1,7 +1,9 @@
+const StyleDictionary = require('style-dictionary');
+
 module.exports = {
   transform: {
     'attribute/cti': require('./transforms/attributeCTI'),
-    nameJsComponent: require('./transforms/nameJsComponent')
+    nameComponentCamel: require('./transforms/nameComponentCamel')
   },
   source: ["tokens/**/*.json"],
   platforms: {
@@ -24,7 +26,7 @@ module.exports = {
     },
     
     jsComponent: {
-      transforms: [`attribute/cti`,`nameJsComponent`,`size/rem`,`color/css`],
+      transforms: [`attribute/cti`,`nameComponentCamel`,`size/rem`,`color/css`],
       buildPath: `web/dist/`,
       files: [{
         destination: `badge.js`,
@@ -56,6 +58,18 @@ module.exports = {
         destination: `ClarityDesignTokens.swift`,
         className: `ClarityDesignTokens`,
         format: `ios-swift/enum.swift`
+      }]
+    },
+    
+    iosSeparate: {
+      buildPath: `ios/dist/`,
+      transforms: StyleDictionary.transformGroup[`ios-swift`].concat(`nameComponentCamel`),
+      files: [{
+        destination: `BadgeTokens.swift`,
+        className: `BadgeTokens`,
+        format: `ios-swift/enum.swift`,
+        filter: (token) => token.path[0] === 'component'
+          && token.path[1] === 'badge'
       }]
     }
   }

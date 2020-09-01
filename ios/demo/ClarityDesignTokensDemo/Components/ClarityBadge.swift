@@ -21,26 +21,26 @@ struct ClarityBadge: View {
         func getBackgroundColor() -> Color {
             switch self {
             case .danger:
-                return Color(ClarityDesignTokens.componentBadgeDangerBackgroundColor)
+                return Color(BadgeTokens.dangerBackgroundColor)
             case .warning:
-                return Color(ClarityDesignTokens.componentBadgeWarningBackgroundColor)
+                return Color(BadgeTokens.warningBackgroundColor)
             case .success:
-                return Color(ClarityDesignTokens.componentBadgeSuccessBackgroundColor)
+                return Color(BadgeTokens.successBackgroundColor)
             case .none:
-                return Color(ClarityDesignTokens.componentBadgeBackgroundColor)
+                return Color(BadgeTokens.backgroundColor)
             }
         }
         
         func getTextColor() -> Color {
             switch self {
             case .danger:
-                return Color(ClarityDesignTokens.componentBadgeDangerColor)
+                return Color(BadgeTokens.dangerColor)
             case .warning:
-                return Color(ClarityDesignTokens.componentBadgeWarningColor)
+                return Color(BadgeTokens.warningColor)
             case .success:
-                return Color(ClarityDesignTokens.componentBadgeSuccessColor)
+                return Color(BadgeTokens.successColor)
             case .none:
-                return Color(ClarityDesignTokens.componentBadgeColor)
+                return Color(BadgeTokens.color)
             }
         }
     }
