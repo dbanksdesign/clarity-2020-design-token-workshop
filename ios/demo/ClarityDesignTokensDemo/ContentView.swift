@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import ClarityDesignTokens
 
 struct ContentView: View {
     var body: some View {
@@ -24,7 +25,7 @@ struct ContentView: View {
                 Image(systemName: "slider.horizontal.3")
                 Text("Tokens")
             }
-        }.accentColor(Tokens.colorBrandPrimary)
+        }.accentColor(Color(ClarityDesignTokens.colorBrandPrimary))
     }
 }
 

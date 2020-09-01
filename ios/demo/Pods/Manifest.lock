@@ -1,0 +1,16 @@
+PODS:
+  - ClarityDesignTokens (0.0.1)
+
+DEPENDENCIES:
+  - ClarityDesignTokens (from `../../`)
+
+EXTERNAL SOURCES:
+  ClarityDesignTokens:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  ClarityDesignTokens: 30de691f47dc94895ac09631c2c42b364989df45
+
+PODFILE CHECKSUM: 668f21517c400f01b2ee9af3a2a92f240d84ded7
+
+COCOAPODS: 1.9.3

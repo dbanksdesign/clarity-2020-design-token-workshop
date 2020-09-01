@@ -1,0 +1,24 @@
+{
+  "name": "ClarityDesignTokens",
+  "version": "0.0.1",
+  "summary": "A short description of ClarityDesignTokens.",
+  "description": "Clarity Design Tokens!",
+  "homepage": "http://EXAMPLE/ClarityDesignTokens",
+  "license": "MIT",
+  "authors": {
+    "Danny Banks": "djb@amazon.com"
+  },
+  "source": {
+    "git": "https://github.com/dbanksdesign/clarity-2020-design-token-workshop.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "ios/dist/**/*.{h,m,swift}",
+  "exclude_files": "ios/demo",
+  "resources": "ios/dist/DesignTokens.xcassets",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

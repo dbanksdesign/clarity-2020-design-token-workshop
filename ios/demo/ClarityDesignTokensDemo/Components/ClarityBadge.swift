@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import ClarityDesignTokens
 
 struct ClarityBadge: View {
     
@@ -20,26 +21,26 @@ struct ClarityBadge: View {
         func getBackgroundColor() -> Color {
             switch self {
             case .danger:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(ClarityDesignTokens.componentBadgeDangerBackgroundColor)
             case .warning:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(ClarityDesignTokens.componentBadgeWarningBackgroundColor)
             case .success:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(ClarityDesignTokens.componentBadgeSuccessBackgroundColor)
             case .none:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(ClarityDesignTokens.componentBadgeBackgroundColor)
             }
         }
         
         func getTextColor() -> Color {
             switch self {
             case .danger:
-                return Tokens.componentBadgeColor
+                return Color(ClarityDesignTokens.componentBadgeDangerColor)
             case .warning:
-                return Tokens.componentBadgeColor
+                return Color(ClarityDesignTokens.componentBadgeWarningColor)
             case .success:
-                return Tokens.componentBadgeColor
+                return Color(ClarityDesignTokens.componentBadgeSuccessColor)
             case .none:
-                return Tokens.componentBadgeColor
+                return Color(ClarityDesignTokens.componentBadgeColor)
             }
         }
     }

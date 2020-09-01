@@ -8,6 +8,7 @@
 // Borrowed from https://gitlab.com/fabio.staiano/bricksui
 
 import SwiftUI
+import ClarityDesignTokens
 
 // MARK: - Custom Button Styles
 
@@ -29,10 +30,10 @@ struct ClarityButtonStyle: ButtonStyle {
         @Environment(\.isEnabled) private var isEnabled: Bool
         var body: some View {
             configuration.label
-                .foregroundColor(Tokens.componentButtonPrimaryColor)
+                .foregroundColor(Color(ClarityDesignTokens.componentButtonPrimaryColor))
                 .padding()
                 .frame(minHeight: 56)
-                .background(Tokens.componentButtonPrimaryBackgroundColor)
+                .background(Color(ClarityDesignTokens.componentButtonPrimaryBackgroundColor))
                 .cornerRadius(4)
                 .opacity(configuration.isPressed ? 0.7 : 1)
         }
@@ -60,14 +61,14 @@ struct ClarityButtonStyle: ButtonStyle {
         var body: some View {
             configuration.label
 //                .brTypo(.s1)
-                .foregroundColor(Tokens.componentButtonColor)
+                .foregroundColor(Color(ClarityDesignTokens.componentButtonColor))
                 .padding()
                 .frame(minHeight: 56)
                 .background(Color.white.opacity(0.15))
                 .cornerRadius(4)
                 .overlay(
                     RoundedRectangle(cornerRadius: 4)
-                        .stroke(Tokens.componentButtonBorderColor, lineWidth: Tokens.componentButtonBorderWidth)
+                        .stroke(Color(ClarityDesignTokens.componentButtonOutlineBorderColor), lineWidth: ClarityDesignTokens.componentButtonOutlineBorderWidth)
                 )
                 .opacity(configuration.isPressed ? 0.7 : 1)
         }

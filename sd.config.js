@@ -48,5 +48,15 @@ module.exports = {
         format: "android/dimens"
       }]
     },
+    
+    ios: {
+      transformGroup: `ios-swift`,
+      buildPath: `ios/dist/`,
+      files: [{
+        destination: `ClarityDesignTokens.swift`,
+        className: `ClarityDesignTokens`,
+        format: `ios-swift/enum.swift`
+      }]
+    }
   }
 }
