@@ -20,26 +20,26 @@ struct ClarityBadge: View {
         func getBackgroundColor() -> Color {
             switch self {
             case .danger:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(Tokens.componentBadgeDangerBackgroundColor)
             case .warning:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(Tokens.componentBadgeWarningBackgroundColor)
             case .success:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(Tokens.componentBadgeSuccessBackgroundColor)
             case .none:
-                return Tokens.componentBadgeBackgroundColor
+                return Color(Tokens.componentBadgeBackgroundColor)
             }
         }
         
         func getTextColor() -> Color {
             switch self {
             case .danger:
-                return Tokens.componentBadgeColor
+                return Color(Tokens.componentBadgeDangerColor)
             case .warning:
-                return Tokens.componentBadgeColor
+                return Color(Tokens.componentBadgeWarningColor)
             case .success:
-                return Tokens.componentBadgeColor
+                return Color(Tokens.componentBadgeSuccessColor)
             case .none:
-                return Tokens.componentBadgeColor
+                return Color(Tokens.componentBadgeColor)
             }
         }
     }
@@ -55,7 +55,7 @@ struct ClarityBadge: View {
         .padding(.vertical, 5)
         .padding(.horizontal, 10)
         .background(color ?? type.getBackgroundColor())
-        .cornerRadius(20)
+        .cornerRadius(Tokens.componentBadgeBorderRadius)
     }
 }
 

@@ -38,7 +38,7 @@ struct FontSizeTokensView: View {
                     .padding(10)
                     .font(.system(size: xxl))
             }.padding(medium)
-        }.navigationBarTitle("FontSize tokens")
+        }.navigationBarTitle("Font Sizes")
     }
 }
 
