@@ -45,14 +45,12 @@
     <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/component_button_primary_background_color</item>
         <item name="android:textColor">@color/component_button_primary_color</item>
-        <item name="android:paddingHorizontal">@dimen/component_button_padding_horizontal</item>
-        <item name="android:paddingVertical">@dimen/component_button_padding_vertical</item>
+        <item name="android:padding">@dimen/component_button_padding</item>
     </style>
 
     <style name="Widget.App.Button.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="strokeColor">@color/component_button_border_color</item>
-        <item name="strokeWidth">@dimen/component_button_border_width</item>
-        <item name="android:paddingHorizontal">@dimen/component_button_padding_horizontal</item>
-        <item name="android:paddingVertical">@dimen/component_button_padding_vertical</item>
+        <item name="strokeColor">@color/component_button_outline_border_color</item>
+        <item name="strokeWidth">@dimen/component_button_outline_border_width</item>
+        <item name="android:padding">@dimen/component_button_padding</item>
     </style>
 </resources>

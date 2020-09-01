@@ -1,6 +1,7 @@
 module.exports = {
   transform: {
-    nameJsComponent: require('./transform/nameJsComponent')
+    'attribute/cti': require('./transforms/attributeCTI'),
+    nameJsComponent: require('./transforms/nameJsComponent')
   },
   source: ["tokens/**/*.json"],
   platforms: {
@@ -31,6 +32,21 @@ module.exports = {
         filter: (token) => token.path[0] === 'component'
           && token.path[1] === 'badge'
       }]
-    }
+    },
+    
+    android: {
+      transformGroup: "android",
+      buildPath: "android/claritydesigntokens/src/main/res/values/",
+      files: [{
+        destination: "design_token_colors.xml",
+        format: "android/colors"
+      },{
+        destination: "design_token_font_dimens.xml",
+        format: "android/fontDimens"
+      },{
+        destination: "design_token_dimens.xml",
+        format: "android/dimens"
+      }]
+    },
   }
 }
