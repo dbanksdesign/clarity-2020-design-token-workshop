@@ -8,12 +8,18 @@
       
       "primary": {
         "background-color": { "value": "{color.brand.primary.value}" },
-        "color": { "value": "{color.font.inverse.value}" }
+        "color": { "value": "{color.font.inverse.value}" },
+        "hover": {
+          "background-color": { "value": "{color.brand.primary-dark.value}" }
+        }
       },
       
       "outline": {
         "border-width": { "value": "{size.border.width.medium.value}" },
-        "border-color": { "value": "{color.border.primary.value}" }
+        "border-color": { "value": "{color.border.primary.value}" },
+        "hover": {
+          "border-color": { "value": "{color.brand.primary-dark.value}" }
+        }
       }
     }
   }

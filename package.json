@@ -3,7 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "web/dist/index.js",
+  "files": [
+    "web/dist"
+  ],
   "scripts": {
     "build": "style-dictionary build --config ./sd.config.js",
     "watch": "chokidar \"tokens.json\" -c \"npm run build\"",
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/dbanksdesign/clarity-2020-design-token-workshop#readme",
   "devDependencies": {
+    "case": "^1.6.3",
     "chokidar-cli": "^2.1.0",
     "style-dictionary": "^2.10.1"
   }

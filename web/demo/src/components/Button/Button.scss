@@ -1,15 +1,24 @@
-@import "$styles/_variables.scss";
+@import "clarity-design-tokens/web/dist/variables.scss";
 
 .clarity-button {
-  padding: $size-padding-small $size-padding-xl;
-  border-radius: $size-border-radius-small;
+  padding: $component-button-padding;
+  border-radius: $component-button-border-radius;
+  color: $component-button-color;
   
   &.primary {
-    background-color: $color-font-primary;
-    color: #fff;
+    background-color: $component-button-primary-background-color;
+    color: $component-button-primary-color;
+    
+    &:hover {
+      background-color: $component-button-primary-hover-background-color;
+    }
   }
   
   &.outline {
-    border: 2px solid $color-border-primary;
+    border: $component-button-outline-border-width solid $component-button-outline-border-color;
+    
+    &:hover {
+      border-color: $component-button-outline-hover-border-color;
+    }
   }
 }
