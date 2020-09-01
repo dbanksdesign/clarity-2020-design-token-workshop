@@ -53,9 +53,9 @@ const Layout = ({location, children}) => {
   return (
     <div className="docs">
       <nav className="docs-nav">
-        <NavLink to="/">
+        <Link to="/" className="docs-nav-logo">
           <Logo />
-        </NavLink>
+        </Link>
         <NavExpander label="Tokens" expanded={location.pathname.includes('tokens')}>
           <TokensNav />
         </NavExpander>
