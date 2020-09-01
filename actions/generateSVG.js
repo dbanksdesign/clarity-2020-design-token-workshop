@@ -13,7 +13,7 @@ module.exports = {
     svgs.forEach(token => {
       const src = template( fs.readFileSync(token.value) );
       const output = src(dictionary.properties);
-      const outputPath = `${config.buildPath||''}${token.value}`;
+      const outputPath = `${config.webPath||''}${token.value}`;
       fs.ensureFileSync(outputPath);
       fs.writeFileSync(outputPath, output);
       

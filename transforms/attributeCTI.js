@@ -1,5 +1,5 @@
-// I MIGHT NOT NEED THIS
 const originalTransform = require('style-dictionary').transform['attribute/cti'];
+
 var cssToCTIMap = {
   'width': {category: 'size', type: 'dimension'},
   'min-width': {category: 'size', type: 'dimension'},
@@ -13,7 +13,6 @@ var cssToCTIMap = {
   'background-color': {category: 'color', type: 'background'},
   'color': {category: 'color', type: 'font'},
   'padding': {category: 'size', type: 'padding'},
-  'padding-top': {category: 'size', type: 'padding'},
   'padding-vertical': {category: 'size', type: 'padding'},
   'padding-horizontal': {category: 'size', type: 'padding'},
   'font-size': {category: 'size', type: 'font'},
