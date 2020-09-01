@@ -1,0 +1,16 @@
+@import "clarity-design-tokens/web/dist/variables.scss";
+
+.clarity-button {
+  padding: $component-button-padding;
+  border-radius: $component-button-border-radius;
+  color: $component-button-color;
+  
+  &.primary {
+    background-color: $component-button-primary-background-color;
+    color: $component-button-primary-color;
+  }
+  
+  &.outline {
+    border: $component-button-outline-border-width solid $component-button-outline-border-color;
+  }
+}

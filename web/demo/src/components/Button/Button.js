@@ -1,5 +1,7 @@
 import React from 'react';
-import './Button.css'
+
+// This component uses SCSS and SCSS variables for styling
+import './Button.scss';
 
 const Button = ({ children, variant="default" }) => {
   return (

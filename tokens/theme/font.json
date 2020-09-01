@@ -1,0 +1,7 @@
+{
+  "font": {
+    "family": {
+      "primary": { "value": "{asset.font.opensans.displayName.value}" }
+    }
+  }
+}

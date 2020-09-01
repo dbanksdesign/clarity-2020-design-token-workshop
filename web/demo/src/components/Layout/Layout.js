@@ -33,7 +33,7 @@ const TokensNav = () => {
   return (
     <>
       <NavLink to="/tokens/color">Color</NavLink>
-      <NavLink to="/tokens/spacing">Spacing</NavLink>
+      <NavLink to="/tokens/padding">Padding</NavLink>
       <NavLink to="/tokens/font-size">Font Size</NavLink>
       <NavLink to="/tokens/typography">Typography</NavLink>
     </>
@@ -53,9 +53,9 @@ const Layout = ({location, children}) => {
   return (
     <div className="docs">
       <nav className="docs-nav">
-        <NavLink to="/">
+        <Link to="/" className="docs-nav-logo">
           <Logo />
-        </NavLink>
+        </Link>
         <NavExpander label="Tokens" expanded={location.pathname.includes('tokens')}>
           <TokensNav />
         </NavExpander>

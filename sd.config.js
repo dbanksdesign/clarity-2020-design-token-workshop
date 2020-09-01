@@ -10,6 +10,10 @@ module.exports = {
     nameComponentCamel: require('./transforms/nameComponentCamel'),
   },
   
+  format: {
+    jsonArray: require('./formats/jsonArray')
+  },
+  
   source: [
     `tokens/core/**/*.json`,
     `tokens/theme/**/*.json`,
@@ -26,6 +30,9 @@ module.exports = {
       },{
         format: `scss/variables`,
         destination: `variables.scss`
+      },{
+        format: `jsonArray`,
+        destination: `allTokens.json`
       }]
     },
     

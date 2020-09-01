@@ -1,6 +1,7 @@
 {
   "size": {
     "padding": {
+      "xs": { "value": 0.25 },
       "small": { "value": 0.5 },
       "medium": { "value": 1 },
       "large": { "value": 1.5 },

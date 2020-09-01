@@ -19,8 +19,12 @@
   text-decoration: none;
 }
 
-.docs-nav-link > .logo {
+.docs-nav-logo {
   height: 3rem;
+  display: block;
+  text-align: center;
+  padding: $size-padding-base;
+  box-sizing: content-box;
 }
 
 .docs-nav-expander-body {
