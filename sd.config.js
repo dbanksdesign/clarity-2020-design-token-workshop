@@ -15,9 +15,7 @@ module.exports = {
   },
   
   source: [
-    `tokens/core/**/*.json`,
-    `tokens/theme/**/*.json`,
-    `tokens/component/**/*.json`
+    `tokens/**/*.json`,
   ],
   
   platforms: {
