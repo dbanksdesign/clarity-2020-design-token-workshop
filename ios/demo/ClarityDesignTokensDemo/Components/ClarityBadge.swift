@@ -53,10 +53,10 @@ struct ClarityBadge: View {
         HStack {
             Text(text).foregroundColor(type.getTextColor())
         }
-        .padding(.vertical, 5)
-        .padding(.horizontal, 10)
+        .padding(.vertical, BadgeTokens.paddingVertical)
+        .padding(.horizontal, BadgeTokens.paddingHorizontal)
         .background(color ?? type.getBackgroundColor())
-        .cornerRadius(20)
+        .cornerRadius(BadgeTokens.borderRadius)
     }
 }
 
