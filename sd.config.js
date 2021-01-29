@@ -45,7 +45,7 @@ module.exports = {
     
     asset: {
       transformGroup: `assets`,
-      buildPath: `web/dist/`,
+      webPath: `web/dist/`,
       androidPath: `android/claritydesigntokens/src/main/res/drawable/`,
       iosPath: `ios/dist/DesignTokens.xcassets/`,
       actions: [`generateSVG`]
